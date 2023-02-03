@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    display: list-item;
+    height: 100%;
+    place-items: center;
+    box-sizing: border-box;
+    background-color: #000;
+    margin-top: 100px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-1 {
+    position: relative;
+    text-align: center;
+    width: 250px;
+    padding: 40px;
+    font-size: 35px;
+    color: #acec0a;
+    font-family: poppins;
+    font-weight: 400;
+    border: 5px solid #acec0a;
+    /* text-transform: uppercase; */
+    letter-spacing: 15px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+    margin-top: 0px;
+
+}
+
+.button-1:hover {
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer {
+    position: relative;
+    margin: 0 50px;
+    background: linear-gradient(#14ff39, #ffeb3b, #ff00e0 );
+}
+
+.button {
+    height: 70px;
+    width: 220px;
+    border-radius: 50px;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.outer button, .outer span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outer button {
+    background: #111;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppersace;
+    cursor: pointer;
+}
+
+.button button{
+    height: 60px;
+    width: 210px;
+    border-radius: 50px;
+}
+
+.circle button{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.outer span {
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+
+.button span{
+    border-radius: 50px;
+}
+
+.circle span {
+    border-radius: 50%;
+}
+
+.outer span:nth-child(1){
+    filter: blur(7px);
+}
+
+.outer span:nth-child(2){
+    filter: blur(14px);
+}
+
+.outer {
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
